@@ -528,5 +528,375 @@
     "mtime": 1788094885.0886004,
     "ast_hash": "e745b5a6c71379800b232a1ba32d16ec",
     "semantic_hash": ""
+  },
+  "premium-wedding-saas/eslint.config.mjs": {
+    "mtime": 1788096921.8199542,
+    "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/next.config.ts": {
+    "mtime": 1788096921.915464,
+    "ast_hash": "9b77af189a21a7a64e4bd7a426f64176",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/package.json": {
+    "mtime": 1788103103.6450315,
+    "ast_hash": "da76a5d15f2d29e420a397dd9849f6b8",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/postcss.config.mjs": {
+    "mtime": 1788096921.8477726,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/src/app/api/auth/login/route.ts": {
+    "mtime": 1788104330.0659409,
+    "ast_hash": "d9613344f07ed8e38981a6470309857e",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/src/app/api/auth/logout/route.ts": {
+    "mtime": 1788104345.0301049,
+    "ast_hash": "01a3fc3ee213ac30788d9f066b7584db",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/src/app/api/auth/me/route.ts": {
+    "mtime": 1788104354.4464357,
+    "ast_hash": "94f8c38a55eeba330ae7c18fc265dd93",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/src/app/api/auth/signup/route.ts": {
+    "mtime": 1788104313.681075,
+    "ast_hash": "c9165fbcf5934840ab1df8787b2c77e4",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/src/app/layout.tsx": {
+    "mtime": 1788096921.9465194,
+    "ast_hash": "70f839ece80281c576701dc08f055685",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/src/app/page.tsx": {
+    "mtime": 1788096960.6486368,
+    "ast_hash": "7960d56e7fc48ecd789e2fd32155fa90",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/src/lib/supabase/admin.ts": {
+    "mtime": 1788102138.7846906,
+    "ast_hash": "138431f74b0654957eb1e30817d7b4cf",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/src/lib/supabase/client.ts": {
+    "mtime": 1788102128.738051,
+    "ast_hash": "dd321a1b4eba866629f8b6a6d4786d2c",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/src/lib/supabase/server.ts": {
+    "mtime": 1788102114.322847,
+    "ast_hash": "7dccaf9653ead46b9a39b61a1595a6d0",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/src/middleware.ts": {
+    "mtime": 1788102576.492088,
+    "ast_hash": "506ada22535d4d1d15bee6ead463c64f",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000001_init_extensions.sql": {
+    "mtime": 1788098063.9973629,
+    "ast_hash": "2451a3cf14684b3e7553e34d5ac1f2fd",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000002_user_profile.sql": {
+    "mtime": 1788098192.7397316,
+    "ast_hash": "041819e7b37d17bef3c8e49f905979f3",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000003_organization.sql": {
+    "mtime": 1788098209.9174788,
+    "ast_hash": "03f4e5cdcc7b2a999081f4b9c3a80e90",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000004_organization_settings.sql": {
+    "mtime": 1788098215.3826995,
+    "ast_hash": "900f4d7bd33217e7c5ee9c8d5aec890e",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000005_role.sql": {
+    "mtime": 1788098222.0503175,
+    "ast_hash": "8b0d1c8f9364b80062e33d0786927675",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000006_permission.sql": {
+    "mtime": 1788098227.5386226,
+    "ast_hash": "a86f15265509eb82a4ac5faab20a7e46",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000007_role_permission.sql": {
+    "mtime": 1788098233.3234713,
+    "ast_hash": "3b7e44f48ae4d26c14ce2c5a76585b1d",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000008_organization_member.sql": {
+    "mtime": 1788098252.5648136,
+    "ast_hash": "1eb244568ad4ee180f4179d294c5cee8",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000009_workspace.sql": {
+    "mtime": 1788098332.0625186,
+    "ast_hash": "e38217608d1bdd430e9f574c0b9b2960",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000010_member_role.sql": {
+    "mtime": 1788098747.9745307,
+    "ast_hash": "09cc5ff79da95186de52c49b85d61a86",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000011_client_access.sql": {
+    "mtime": 1788098437.6511977,
+    "ast_hash": "79287e1abdb06a0bf9a6c67e6b84811f",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000012_wedding_profile.sql": {
+    "mtime": 1788098448.2189124,
+    "ast_hash": "93d23c7344dbfd49fb9219a7ba562c62",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000013_couple_person.sql": {
+    "mtime": 1788098712.5769365,
+    "ast_hash": "d39f57c48c983a1a793d8e83b36cbdd3",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000014_venue.sql": {
+    "mtime": 1788098718.4059968,
+    "ast_hash": "b1fe6a7cff38ebe99931a24b733a19d2",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000015_event.sql": {
+    "mtime": 1788098725.2440803,
+    "ast_hash": "96a255a7f714ed3fab608b160b4dd03c",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000016_guest.sql": {
+    "mtime": 1788098760.1029227,
+    "ast_hash": "9a4c5bb2bfb02f94ec00dd5ba34e50aa",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000017_event_guest.sql": {
+    "mtime": 1788098769.8247242,
+    "ast_hash": "5e6a3fe48e2f7d400ee8018d2beb233f",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000018_invitation_party.sql": {
+    "mtime": 1788098777.075536,
+    "ast_hash": "f42beb83d98b20827320a739ad13d5bd",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000019_invitation.sql": {
+    "mtime": 1788098784.132601,
+    "ast_hash": "7b89a716b4b89f23022dcb143eb088b1",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000020_invitation_token.sql": {
+    "mtime": 1788098789.451516,
+    "ast_hash": "8c5e167c4730cdb53e660d954094801d",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000021_rsvp.sql": {
+    "mtime": 1788098795.7805693,
+    "ast_hash": "cac808a0bb036dfed69198a13d0d1cc9",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000022_rsvp_response_history.sql": {
+    "mtime": 1788098800.882447,
+    "ast_hash": "9f011373b31f5be85954f7849c12dc7a",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000023_checkin_session.sql": {
+    "mtime": 1788098891.7013328,
+    "ast_hash": "ba03f6bf9714e7bde001bde1612f9ad1",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000024_checkin_record.sql": {
+    "mtime": 1788098981.052775,
+    "ast_hash": "b7ecc3168b03c5a5f1babe319dbd0302",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000025_souvenir_entitlement.sql": {
+    "mtime": 1788098990.1360373,
+    "ast_hash": "97be60a8d940f3d46687e9ec225240f7",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000026_souvenir_entitlement_override.sql": {
+    "mtime": 1788099022.5054479,
+    "ast_hash": "f44dcd3c4ba8b1b98f7324cf03fde678",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000027_souvenir_claim.sql": {
+    "mtime": 1788099033.591154,
+    "ast_hash": "da115f24aac5faa2e1a36dca9c57edd0",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000028_website.sql": {
+    "mtime": 1788099076.916109,
+    "ast_hash": "e2245608ab4f97ea505d3f5134e3af70",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000029_website_version.sql": {
+    "mtime": 1788099341.0223854,
+    "ast_hash": "c71b5f62af4b6f6f29e7aecfdbc2d072",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000030_website_section.sql": {
+    "mtime": 1788099346.298831,
+    "ast_hash": "680cacf8d004ba9d42a7052c55551d07",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000031_theme.sql": {
+    "mtime": 1788099351.957846,
+    "ast_hash": "482a33eb4d767bf3704d4e6d033b1a7b",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000032_media_asset.sql": {
+    "mtime": 1788099383.191549,
+    "ast_hash": "3755f5a91755b7be7edce696ec5fe2ac",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000033_saas_plan.sql": {
+    "mtime": 1788099388.4495723,
+    "ast_hash": "795573667a2b13705524d2ecd1514602",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000034_subscription.sql": {
+    "mtime": 1788099397.535187,
+    "ast_hash": "c8cfa435953c3790fb532f3b4a33f767",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000035_invoice.sql": {
+    "mtime": 1788099404.0338101,
+    "ast_hash": "cb14aa047c5e0ada3b3c562c54b59181",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000036_billing_payment_transaction.sql": {
+    "mtime": 1788099411.0866196,
+    "ast_hash": "b731650a4917e78c11a492b00cb501a6",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000037_gift_configuration.sql": {
+    "mtime": 1788099417.8531475,
+    "ast_hash": "b20285c22a51c10ee01d7298dc293d21",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000038_gift_payment_intent.sql": {
+    "mtime": 1788099424.5946257,
+    "ast_hash": "73c84acaec8664258601c52a7dd00615",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000039_verified_gift_transaction.sql": {
+    "mtime": 1788099430.4277067,
+    "ast_hash": "69b0e1e6d990d06be193cf05ac20aaf9",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000040_audit_log.sql": {
+    "mtime": 1788099527.9388702,
+    "ast_hash": "782cb83e972e64d7b51d29f9cfd1afc1",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000041_indexes.sql": {
+    "mtime": 1788099628.003575,
+    "ast_hash": "04e63e3b02dab14a10d4314752ab3b3d",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000042_integrity_helpers.sql": {
+    "mtime": 1788099674.103032,
+    "ast_hash": "d60cca3686c512fdb113ea432e3422f5",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000043_seed_roles_permissions.sql": {
+    "mtime": 1788099868.699631,
+    "ast_hash": "f8eb51a7868c2319459bd8ead5e73f9f",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000044_rls_helpers.sql": {
+    "mtime": 1788101401.8113194,
+    "ast_hash": "755272ae9182d3e5d9509240a695046b",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000045_rls_tenant_rbac.sql": {
+    "mtime": 1788101429.7749398,
+    "ast_hash": "fef9a2764dc76901a48b6968aba3dba3",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000046_rls_workspace_wedding.sql": {
+    "mtime": 1788101439.923633,
+    "ast_hash": "11e47150e70a679a1319acc07e64284c",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000047_rls_invitation_rsvp.sql": {
+    "mtime": 1788101457.4163897,
+    "ast_hash": "473f724ad41b347d88d32c3b6e445399",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000048_rls_souvenir_website.sql": {
+    "mtime": 1788101468.9851747,
+    "ast_hash": "73660ec1eba9abd34d71ff3a6fbf6d07",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000049_rls_billing_gift_audit.sql": {
+    "mtime": 1788101478.3297257,
+    "ast_hash": "88edea4e6f5ef04f7da5b8631a8e26aa",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000050_member_role_event_scope.sql": {
+    "mtime": 1788103533.400829,
+    "ast_hash": "159697b38c2ad66731311a710948db9c",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/supabase/migrations/20260830000051_auto_create_user_profile.sql": {
+    "mtime": 1788103950.109935,
+    "ast_hash": "c8e1ce9403523bc47b0b9458ca76aac9",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/tsconfig.json": {
+    "mtime": 1788096960.645211,
+    "ast_hash": "ee17fd1c97c735e9f3564e3f5251f125",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/AGENTS.md": {
+    "mtime": 1788097263.6920362,
+    "ast_hash": "982ae9e07665748cdf2eaf8060f97ead",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/CLAUDE.md": {
+    "mtime": 1788097057.7627513,
+    "ast_hash": "5c27369b226fcf2be8a6cfe52224e767",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/README.md": {
+    "mtime": 1788096921.7921097,
+    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/public/file.svg": {
+    "mtime": 1788096921.8548129,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/public/globe.svg": {
+    "mtime": 1788096921.8647718,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/public/next.svg": {
+    "mtime": 1788096921.87574,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/public/vercel.svg": {
+    "mtime": 1788096921.884838,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": ""
+  },
+  "premium-wedding-saas/public/window.svg": {
+    "mtime": 1788096921.8937838,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": ""
   }
 }

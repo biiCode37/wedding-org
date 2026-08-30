@@ -1,16 +1,16 @@
 # Graph Report - WEDDING_ORGANIZER  (2026-08-30)
 
 ## Corpus Check
-- 175 files · ~145,216 words
+- 106 files · ~128,260 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 670 nodes · 654 edges · 92 communities (46 shown, 46 thin omitted)
+- 552 nodes · 542 edges · 79 communities (37 shown, 42 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.9)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `19c85b7c`
+- Built from commit: `785610c9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -33,7 +33,7 @@
 - High Impact
 - ui-ux-pro-max
 - Code Correctness Rules
-- devDependencies
+- DesignSystemGenerator
 - Code Security Skill
 - Prevent Insecure Deserialization
 - Prevent Path Traversal
@@ -94,27 +94,18 @@
 - prototype-pollution.md
 - _template.md
 - unsafe-functions.md
-- compilerOptions
-- 2. Non-Negotiable Operating Rules
-- createSupabaseServerClient
-- layout.tsx
-- premium-wedding-saas/README.md
-- middleware.ts
-- eslint.config.mjs
-- next.config.ts
-- postcss.config.mjs
 
 ## God Nodes (most connected - your core abstractions)
 1. `Code Security` - 31 edges
-2. `compilerOptions` - 16 edges
-3. `High Impact` - 14 edges
-4. `2. Non-Negotiable Operating Rules` - 13 edges
-5. `DesignSystemGenerator` - 11 edges
-6. `bash` - 11 edges
-7. `Critical Impact` - 10 edges
-8. `Code Best Practices` - 10 edges
-9. `createSupabaseServerClient()` - 9 edges
-10. `Secure Kubernetes Configurations` - 9 edges
+2. `High Impact` - 14 edges
+3. `DesignSystemGenerator` - 11 edges
+4. `bash` - 11 edges
+5. `Critical Impact` - 10 edges
+6. `Code Best Practices` - 10 edges
+7. `Secure Kubernetes Configurations` - 9 edges
+8. `Secure Azure Terraform Configurations` - 9 edges
+9. `ui-ux-pro-max` - 9 edges
+10. `search()` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `AI Code Executor` --references--> `PWS AI Agent Operating Rules v0.1`  [EXTRACTED]
@@ -136,7 +127,7 @@
 - **Core Domain Logic & Invariants** — docs_pws_physical_database_schema_v0_1_db_schema, docs_pws_use_cases_state_machines_v0_1_use_cases, docs_pws_testing_acceptance_criteria_v0_1_acceptance_criteria [EXTRACTED 0.95]
 - **Operational & Reliability Framework** — docs_pws_incident_response_playbook_v0_1_incident_response, docs_pws_observability_architecture_v0_1_observability_arch, docs_pws_operations_backup_retention_v0_1_backup_strategy [INFERRED 0.85]
 
-## Communities (92 total, 46 thin omitted)
+## Communities (79 total, 42 thin omitted)
 
 ### Community 0 - "Use Cases & State Machines"
 Cohesion: 0.22
@@ -151,8 +142,8 @@ Cohesion: 0.05
 Nodes (42): git add *, git branch *, git checkout *, git commit *, git diff *, git log *, git merge *, git pull * (+34 more)
 
 ### Community 14 - "design_system.py"
-Cohesion: 0.06
-Nodes (42): BM25, detect_domain(), _load_csv(), Lowercase, split, remove punctuation, filter short words, Build BM25 index from documents, Score all documents against query, Load CSV and return list of dicts, Core search function using BM25 (+34 more)
+Cohesion: 0.08
+Nodes (33): BM25, detect_domain(), _load_csv(), Lowercase, split, remove punctuation, filter short words, Build BM25 index from documents, Score all documents against query, Load CSV and return list of dicts, Core search function using BM25 (+25 more)
 
 ### Community 15 - "High Impact"
 Cohesion: 0.06
@@ -166,9 +157,9 @@ Nodes (29): Accessibility, Available Domains, Available Stacks, Common Rules for
 Cohesion: 0.08
 Nodes (23): Assignment in Condition, ato* Functions, Bash, C, Code Correctness Rules, Elixir: Atom Exhaustion, Go, Integer Overflow from Atoi (+15 more)
 
-### Community 18 - "devDependencies"
-Cohesion: 0.05
-Nodes (36): eslint, eslint-config-next, next, dependencies, next, react, react-dom, @supabase/ssr (+28 more)
+### Community 18 - "DesignSystemGenerator"
+Cohesion: 0.16
+Nodes (9): DesignSystemGenerator, Select best matching result based on priority keywords., Extract results list from search result dict., Generate complete design system recommendation., Generates design system recommendations from aggregated searches., Load reasoning rules from CSV., Execute searches across multiple domains., Find matching reasoning rule for a category. (+1 more)
 
 ### Community 19 - "Code Security Skill"
 Cohesion: 0.12
@@ -286,45 +277,25 @@ Nodes (3): Key Prevention Patterns, Prevent Code Injection, References
 Cohesion: 0.50
 Nodes (3): context7, github, vercel
 
-### Community 79 - "compilerOptions"
-Cohesion: 0.07
-Nodes (28): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+20 more)
-
-### Community 80 - "2. Non-Negotiable Operating Rules"
-Cohesion: 0.12
-Nodes (16): 1. Mission, 2.1 Never invent missing decisions, 2.2 Do not override the source-of-truth documents, 2.3 Explicit user task approval, 2.4 Branch Ownership and Development Boundary, 2. Non-Negotiable Operating Rules, AGENT.md, Approval Needed (+8 more)
-
-### Community 81 - "createSupabaseServerClient"
-Cohesion: 0.38
-Nodes (5): POST(), POST(), GET(), POST(), createSupabaseServerClient()
-
-### Community 82 - "layout.tsx"
-Cohesion: 0.40
-Nodes (3): geistMono, geistSans, metadata
-
-### Community 83 - "premium-wedding-saas/README.md"
-Cohesion: 0.50
-Nodes (3): Deploy on Vercel, Getting Started, Learn More
-
 ## Knowledge Gaps
-- **389 isolated node(s):** `AGENT.md`, `1. Mission`, `2.1 Never invent missing decisions`, `2.2 Do not override the source-of-truth documents`, `2.3 Explicit user task approval` (+384 more)
+- **321 isolated node(s):** `Abstract`, `Table of Contents`, `1.1 Prevent SQL Injection`, `2.1 Prevent Command Injection`, `3.1 Prevent Cross-Site Scripting (XSS)` (+316 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **46 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **42 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Code Security` connect `Code Security` to `10. Insecure Cryptography`, `11. Insecure Transport`, `12. Server-Side Request Forgery`, `13. JWT Authentication`, `14. Cross-Site Request Forgery`, `15. Prototype Pollution`, `16. Unsafe Functions`, `17. Terraform AWS Security`, `18. Terraform Azure Security`, `19. Terraform GCP Security`, `1. SQL Injection`, `20. Kubernetes Security`, `21. Docker Security`, `24. Race Conditions`, `25. Code Correctness`, `26. Best Practices`, `27. Performance`, `28. Maintainability`, `2. Command Injection`, `3. Cross-Site Scripting`, `4. XML External Entity`, `5. Path Traversal`, `6. Insecure Deserialization`, `7. Code Injection`, `8. Hardcoded Secrets`, `9. Memory Safety`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
-- **What connects `AGENT.md`, `1. Mission`, `2.1 Never invent missing decisions` to the rest of the system?**
-  _389 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **Why does `DesignSystemGenerator` connect `DesignSystemGenerator` to `design_system.py`?**
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
+- **What connects `Abstract`, `Table of Contents`, `1.1 Prevent SQL Injection` to the rest of the system?**
+  _321 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `bash` be split into smaller, more focused modules?**
   _Cohesion score 0.047619047619047616 - nodes in this community are weakly interconnected._
 - **Should `design_system.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.05576441102756892 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07948717948717948 - nodes in this community are weakly interconnected._
 - **Should `High Impact` be split into smaller, more focused modules?**
   _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
 - **Should `ui-ux-pro-max` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
-- **Should `Code Correctness Rules` be split into smaller, more focused modules?**
-  _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._

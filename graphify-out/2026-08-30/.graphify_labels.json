@@ -17,7 +17,7 @@
   "15": "High Impact",
   "16": "ui-ux-pro-max",
   "17": "Code Correctness Rules",
-  "18": "devDependencies",
+  "18": "DesignSystemGenerator",
   "19": "Code Security Skill",
   "20": "Prevent Insecure Deserialization",
   "21": "Prevent Path Traversal",
@@ -77,18 +77,5 @@
   "75": "maintainability.md",
   "76": "prototype-pollution.md",
   "77": "_template.md",
-  "78": "unsafe-functions.md",
-  "79": "compilerOptions",
-  "80": "2. Non-Negotiable Operating Rules",
-  "81": "createSupabaseServerClient",
-  "82": "layout.tsx",
-  "83": "premium-wedding-saas/README.md",
-  "84": "middleware.ts",
-  "85": "eslint.config.mjs",
-  "86": "next.config.ts",
-  "87": "postcss.config.mjs",
-  "88": "page.tsx",
-  "89": "admin.ts",
-  "90": "client.ts",
-  "91": "CLAUDE.md"
+  "78": "unsafe-functions.md"
 }
