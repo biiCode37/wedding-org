@@ -1,0 +1,16 @@
+create index idx_organization_member_org_status on public.organization_member (organization_id, status);
+create index idx_workspace_org_status on public.workspace (organization_id, status);
+create index idx_guest_workspace_name on public.guest (workspace_id, display_name);
+create index idx_guest_workspace_phone on public.guest (workspace_id, phone);
+create index idx_guest_workspace_email on public.guest (workspace_id, email);
+create index idx_event_workspace_starts on public.event (workspace_id, starts_at);
+create index idx_event_workspace_status on public.event (workspace_id, status);
+create index idx_event_guest_workspace_event_status on public.event_guest (workspace_id, event_id, attendance_status);
+create index idx_invitation_party_workspace_guest on public.invitation_party (workspace_id, primary_guest_id);
+create index idx_invitation_party_workspace_status on public.invitation_party (workspace_id, status);
+create index idx_checkin_record_workspace_event_time on public.checkin_record (workspace_id, event_id, checked_in_at);
+create index idx_souvenir_entitlement_workspace_status on public.souvenir_entitlement (workspace_id, status);
+create index idx_souvenir_claim_workspace_entitlement_claimed on public.souvenir_claim (workspace_id, souvenir_entitlement_id, claimed_at);
+create index idx_audit_log_org_created on public.audit_log (organization_id, created_at);
+create index idx_audit_log_workspace_created on public.audit_log (workspace_id, created_at);
+create index idx_audit_log_actor_created on public.audit_log (actor_user_id, created_at);

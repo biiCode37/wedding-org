@@ -1,0 +1,747 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "pws_documentation_hierarchy",
+        "label": "PWS Documentation Hierarchy",
+        "nodes": [
+          "docs_pws_domain_core_data_multi_tenant_rbac_v0_1",
+          "docs_pws_architecture_decision_record_v0_1",
+          "docs_pws_authorization_rls_specification_v0_1_updated",
+          "docs_pws_api_contract_v0_1",
+          "docs_pws_domain_services_business_rules_v0_1",
+          "docs_pws_engineering_implementation_blueprint_v0_1"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "AGENTS.md"
+      },
+      {
+        "id": "agent_execution_protocol",
+        "label": "AI Agent Execution Protocol",
+        "nodes": [
+          "agents_ai_code_executor",
+          "docs_pws_ai_agent_operating_rules_v0_1",
+          "docs_pws_agent_action_log_v0_1",
+          "agents_devmode_branch"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "AGENTS.md"
+      },
+      {
+        "id": "core_domain_logic",
+        "label": "Core Domain Logic & Invariants",
+        "nodes": [
+          "docs_pws_physical_database_schema_v0_1_db_schema",
+          "docs_pws_use_cases_state_machines_v0_1_use_cases",
+          "docs_pws_testing_acceptance_criteria_v0_1_acceptance_criteria"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "source_file": "docs/PWS_Testing_Acceptance_Criteria_v0.1.md"
+      },
+      {
+        "id": "operational_readiness",
+        "label": "Operational & Reliability Framework",
+        "nodes": [
+          "docs_pws_incident_response_playbook_v0_1_incident_response",
+          "docs_pws_observability_architecture_v0_1_observability_arch",
+          "docs_pws_operations_backup_retention_v0_1_backup_strategy"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "docs/PWS_Incident_Response_Playbook_v0.1.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "graphify.js",
+      "file_type": "code",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "opencode_plugins_graphify",
+      "community": 2,
+      "norm_label": "graphify.js"
+    },
+    {
+      "label": "GraphifyPlugin()",
+      "file_type": "code",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "opencode_plugins_graphify_graphifyplugin",
+      "community": 2,
+      "norm_label": "graphifyplugin()"
+    },
+    {
+      "label": "IMPORTANT: keep the reminder string free of backticks and $(...) constructs.",
+      "file_type": "rationale",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "opencode_plugins_graphify_rationale_4",
+      "community": 2,
+      "norm_label": "important: keep the reminder string free of backticks and $(...) constructs."
+    },
+    {
+      "label": "AI Code Executor",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_ai_code_executor",
+      "community": 1,
+      "norm_label": "ai code executor"
+    },
+    {
+      "label": "devmode branch",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_devmode_branch",
+      "community": 1,
+      "norm_label": "devmode branch"
+    },
+    {
+      "label": "PWS AI Agent Operating Rules v0.1",
+      "file_type": "document",
+      "source_file": "docs/PWS_AI_Agent_Operating_Rules_v0.1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_pws_ai_agent_operating_rules_v0_1",
+      "community": 3,
+      "norm_label": "pws ai agent operating rules v0.1"
+    },
+    {
+      "label": "PWS API Contract v0.1",
+      "file_type": "document",
+      "source_file": "docs/PWS_API_Contract_v0.1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_pws_api_contract_v0_1",
+      "community": 1,
+      "norm_label": "pws api contract v0.1"
+    },
+    {
+      "label": "PWS Architecture Decision Record v0.1",
+      "file_type": "document",
+      "source_file": "docs/PWS_Architecture_Decision_Record_v0.1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_pws_architecture_decision_record_v0_1",
+      "community": 1,
+      "norm_label": "pws architecture decision record v0.1"
+    },
+    {
+      "label": "PWS Authorization + RLS Specification v0.1",
+      "file_type": "document",
+      "source_file": "docs/PWS_Authorization_RLS_Specification_v0.1_updated.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_pws_authorization_rls_specification_v0_1_updated",
+      "community": 1,
+      "norm_label": "pws authorization + rls specification v0.1"
+    },
+    {
+      "label": "PWS Check-in Offline Strategy v0.1",
+      "file_type": "document",
+      "source_file": "docs/PWS_Checkin_Offline_Strategy_v0.1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_pws_checkin_offline_strategy_v0_1",
+      "community": 6,
+      "norm_label": "pws check-in offline strategy v0.1"
+    },
+    {
+      "label": "PWS Client Writable Fields v0.1",
+      "file_type": "document",
+      "source_file": "docs/PWS_Client_Writable_Fields_v0.1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_pws_client_writable_fields_v0_1",
+      "community": 7,
+      "norm_label": "pws client writable fields v0.1"
+    },
+    {
+      "label": "PWS Data Governance and Privacy v0.1",
+      "file_type": "document",
+      "source_file": "docs/PWS_Data_Governance_and_Privacy_v0.1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_pws_data_governance_and_privacy_v0_1",
+      "community": 8,
+      "norm_label": "pws data governance and privacy v0.1"
+    },
+    {
+      "label": "PWS Deployment Guide and Runbook v0.1",
+      "file_type": "document",
+      "source_file": "docs/PWS_Deployment_Guide_and_Runbook_v0.1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_pws_deployment_guide_and_runbook_v0_1",
+      "community": 9,
+      "norm_label": "pws deployment guide and runbook v0.1"
+    },
+    {
+      "label": "PWS Domain Model + Core Entity/Data Model + Multi-Tenant/RBAC Model v0.1",
+      "file_type": "document",
+      "source_file": "docs/PWS_Domain_Core_Data_MultiTenant_RBAC_v0.1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_pws_domain_core_data_multi_tenant_rbac_v0_1",
+      "community": 1,
+      "norm_label": "pws domain model + core entity/data model + multi-tenant/rbac model v0.1"
+    },
+    {
+      "label": "PWS Domain Services + Business Rules v0.1",
+      "file_type": "document",
+      "source_file": "docs/PWS_Domain_Services_Business_Rules_v0.1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_pws_domain_services_business_rules_v0_1",
+      "community": 1,
+      "norm_label": "pws domain services + business rules v0.1"
+    },
+    {
+      "label": "PWS Engineering Implementation Blueprint v0.1",
+      "file_type": "document",
+      "source_file": "docs/PWS_Engineering_Implementation_Blueprint_v0.1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_pws_engineering_implementation_blueprint_v0_1",
+      "community": 1,
+      "norm_label": "pws engineering implementation blueprint v0.1"
+    },
+    {
+      "label": "PWS Agent Action Log v0.1",
+      "file_type": "document",
+      "source_file": "docs/PWS_Agent_Action_Log_v0.1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_pws_agent_action_log_v0_1",
+      "community": 3,
+      "norm_label": "pws agent action log v0.1"
+    },
+    {
+      "label": "Feature Flag Strategy",
+      "file_type": "document",
+      "source_file": "docs/PWS_Feature_Flag_Strategy_v0.1.md",
+      "id": "docs_pws_feature_flag_strategy_v0_1_feature_flag",
+      "community": 4,
+      "norm_label": "feature flag strategy"
+    },
+    {
+      "label": "Product Glossary",
+      "file_type": "document",
+      "source_file": "docs/PWS_Glossary_v0.1.md",
+      "id": "docs_pws_glossary_v0_1_glossary",
+      "community": 10,
+      "norm_label": "product glossary"
+    },
+    {
+      "label": "Incident Response Playbook",
+      "file_type": "document",
+      "source_file": "docs/PWS_Incident_Response_Playbook_v0.1.md",
+      "id": "docs_pws_incident_response_playbook_v0_1_incident_response",
+      "community": 5,
+      "norm_label": "incident response playbook"
+    },
+    {
+      "label": "Integration Test Plan",
+      "file_type": "document",
+      "source_file": "docs/PWS_Integration_Test_Plan_v0.1.md",
+      "id": "docs_pws_integration_test_plan_v0_1_integration_test",
+      "community": 0,
+      "norm_label": "integration test plan"
+    },
+    {
+      "label": "Messaging Architecture",
+      "file_type": "document",
+      "source_file": "docs/PWS_Messaging_Architecture_v0.1.md",
+      "id": "docs_pws_messaging_architecture_v0_1_messaging_arch",
+      "community": 0,
+      "norm_label": "messaging architecture"
+    },
+    {
+      "label": "Observability Architecture",
+      "file_type": "document",
+      "source_file": "docs/PWS_Observability_Architecture_v0.1.md",
+      "id": "docs_pws_observability_architecture_v0_1_observability_arch",
+      "community": 5,
+      "norm_label": "observability architecture"
+    },
+    {
+      "label": "Backup & Retention Strategy",
+      "file_type": "document",
+      "source_file": "docs/PWS_Operations_Backup_Retention_v0.1.md",
+      "id": "docs_pws_operations_backup_retention_v0_1_backup_strategy",
+      "community": 11,
+      "norm_label": "backup & retention strategy"
+    },
+    {
+      "label": "Product Requirements Document",
+      "file_type": "document",
+      "source_file": "docs/PWS_PRD_v0.1.md",
+      "id": "docs_pws_prd_v0_1_prd",
+      "community": 12,
+      "norm_label": "product requirements document"
+    },
+    {
+      "label": "Payment Architecture",
+      "file_type": "document",
+      "source_file": "docs/PWS_Payment_Architecture_v0.1.md",
+      "id": "docs_pws_payment_architecture_v0_1_payment_arch",
+      "community": 0,
+      "norm_label": "payment architecture"
+    },
+    {
+      "label": "Physical Database Schema",
+      "file_type": "document",
+      "source_file": "docs/PWS_Physical_Database_Schema_v0.1.md",
+      "id": "docs_pws_physical_database_schema_v0_1_db_schema",
+      "community": 0,
+      "norm_label": "physical database schema"
+    },
+    {
+      "label": "Public RSVP Expiry Spec",
+      "file_type": "document",
+      "source_file": "docs/PWS_Public_RSVP_Expiry_Spec_v0.1.md",
+      "id": "docs_pws_public_rsvp_expiry_spec_v0_1_rsvp_expiry",
+      "community": 0,
+      "norm_label": "public rsvp expiry spec"
+    },
+    {
+      "label": "Release Process & Change Log",
+      "file_type": "document",
+      "source_file": "docs/PWS_Release_Process_and_Change_Log_v0.1.md",
+      "id": "docs_pws_release_process_and_change_log_v0_1_release_process",
+      "community": 4,
+      "norm_label": "release process & change log"
+    },
+    {
+      "label": "Release Roadmap & Zero-Cost Strategy",
+      "file_type": "document",
+      "source_file": "docs/PWS_Release_Roadmap_and_Zero_Cost_Strategy_v0.1.md",
+      "id": "docs_pws_release_roadmap_and_zero_cost_strategy_v0_1_roadmap",
+      "community": 13,
+      "norm_label": "release roadmap & zero-cost strategy"
+    },
+    {
+      "label": "Security & NFR Specification",
+      "file_type": "document",
+      "source_file": "docs/PWS_Security_NFR_Specification_v0.1.md",
+      "id": "docs_pws_security_nfr_specification_v0_1_security_nfr",
+      "community": 0,
+      "norm_label": "security & nfr specification"
+    },
+    {
+      "label": "Testing & Acceptance Criteria",
+      "file_type": "document",
+      "source_file": "docs/PWS_Testing_Acceptance_Criteria_v0.1.md",
+      "id": "docs_pws_testing_acceptance_criteria_v0_1_acceptance_criteria",
+      "community": 0,
+      "norm_label": "testing & acceptance criteria"
+    },
+    {
+      "label": "UI/UX Specification",
+      "file_type": "document",
+      "source_file": "docs/PWS_UI_UX_Specification_v0.1.md",
+      "id": "docs_pws_ui_ux_specification_v0_1_ui_ux_spec",
+      "community": 0,
+      "norm_label": "ui/ux specification"
+    },
+    {
+      "label": "Use Cases & State Machines",
+      "file_type": "document",
+      "source_file": "docs/PWS_Use_Cases_State_Machines_v0.1.md",
+      "id": "docs_pws_use_cases_state_machines_v0_1_use_cases",
+      "community": 0,
+      "norm_label": "use cases & state machines"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "opencode_plugins_graphify",
+      "target": "opencode_plugins_graphify_graphifyplugin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "opencode_plugins_graphify_rationale_4",
+      "target": "opencode_plugins_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_ai_code_executor",
+      "target": "agents_devmode_branch"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_ai_code_executor",
+      "target": "docs_pws_ai_agent_operating_rules_v0_1"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_ai_code_executor",
+      "target": "docs_pws_api_contract_v0_1"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_ai_code_executor",
+      "target": "docs_pws_architecture_decision_record_v0_1"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_ai_code_executor",
+      "target": "docs_pws_authorization_rls_specification_v0_1_updated"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_ai_code_executor",
+      "target": "docs_pws_domain_core_data_multi_tenant_rbac_v0_1"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_ai_code_executor",
+      "target": "docs_pws_domain_services_business_rules_v0_1"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_ai_code_executor",
+      "target": "docs_pws_engineering_implementation_blueprint_v0_1"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_AI_Agent_Operating_Rules_v0.1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_pws_ai_agent_operating_rules_v0_1",
+      "target": "docs_pws_agent_action_log_v0_1"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_API_Contract_v0.1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_pws_api_contract_v0_1",
+      "target": "docs_pws_architecture_decision_record_v0_1"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_API_Contract_v0.1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_pws_api_contract_v0_1",
+      "target": "docs_pws_authorization_rls_specification_v0_1_updated"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_API_Contract_v0.1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_pws_api_contract_v0_1",
+      "target": "docs_pws_domain_core_data_multi_tenant_rbac_v0_1"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_Domain_Services_Business_Rules_v0.1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_pws_domain_services_business_rules_v0_1",
+      "target": "docs_pws_api_contract_v0_1"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_Architecture_Decision_Record_v0.1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_pws_architecture_decision_record_v0_1",
+      "target": "docs_pws_domain_core_data_multi_tenant_rbac_v0_1"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_Engineering_Implementation_Blueprint_v0.1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_pws_engineering_implementation_blueprint_v0_1",
+      "target": "docs_pws_architecture_decision_record_v0_1"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_Authorization_RLS_Specification_v0.1_updated.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_pws_authorization_rls_specification_v0_1_updated",
+      "target": "docs_pws_domain_core_data_multi_tenant_rbac_v0_1"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_Engineering_Implementation_Blueprint_v0.1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_pws_engineering_implementation_blueprint_v0_1",
+      "target": "docs_pws_authorization_rls_specification_v0_1_updated"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_Feature_Flag_Strategy_v0.1.md",
+      "source": "docs_pws_feature_flag_strategy_v0_1_feature_flag",
+      "target": "docs_pws_release_process_and_change_log_v0_1_release_process"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_Incident_Response_Playbook_v0.1.md",
+      "source": "docs_pws_incident_response_playbook_v0_1_incident_response",
+      "target": "docs_pws_observability_architecture_v0_1_observability_arch"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/PWS_Integration_Test_Plan_v0.1.md",
+      "source": "docs_pws_integration_test_plan_v0_1_integration_test",
+      "target": "docs_pws_physical_database_schema_v0_1_db_schema"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_Messaging_Architecture_v0.1.md",
+      "source": "docs_pws_messaging_architecture_v0_1_messaging_arch",
+      "target": "docs_pws_use_cases_state_machines_v0_1_use_cases"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_Payment_Architecture_v0.1.md",
+      "source": "docs_pws_payment_architecture_v0_1_payment_arch",
+      "target": "docs_pws_physical_database_schema_v0_1_db_schema"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_Use_Cases_State_Machines_v0.1.md",
+      "source": "docs_pws_use_cases_state_machines_v0_1_use_cases",
+      "target": "docs_pws_physical_database_schema_v0_1_db_schema"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_Public_RSVP_Expiry_Spec_v0.1.md",
+      "source": "docs_pws_public_rsvp_expiry_spec_v0_1_rsvp_expiry",
+      "target": "docs_pws_use_cases_state_machines_v0_1_use_cases"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_Security_NFR_Specification_v0.1.md",
+      "source": "docs_pws_security_nfr_specification_v0_1_security_nfr",
+      "target": "docs_pws_use_cases_state_machines_v0_1_use_cases"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_Testing_Acceptance_Criteria_v0.1.md",
+      "source": "docs_pws_testing_acceptance_criteria_v0_1_acceptance_criteria",
+      "target": "docs_pws_security_nfr_specification_v0_1_security_nfr"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PWS_UI_UX_Specification_v0.1.md",
+      "source": "docs_pws_ui_ux_specification_v0_1_ui_ux_spec",
+      "target": "docs_pws_use_cases_state_machines_v0_1_use_cases"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "pws_documentation_hierarchy",
+      "label": "PWS Documentation Hierarchy",
+      "nodes": [
+        "docs_pws_domain_core_data_multi_tenant_rbac_v0_1",
+        "docs_pws_architecture_decision_record_v0_1",
+        "docs_pws_authorization_rls_specification_v0_1_updated",
+        "docs_pws_api_contract_v0_1",
+        "docs_pws_domain_services_business_rules_v0_1",
+        "docs_pws_engineering_implementation_blueprint_v0_1"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md"
+    },
+    {
+      "id": "agent_execution_protocol",
+      "label": "AI Agent Execution Protocol",
+      "nodes": [
+        "agents_ai_code_executor",
+        "docs_pws_ai_agent_operating_rules_v0_1",
+        "docs_pws_agent_action_log_v0_1",
+        "agents_devmode_branch"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md"
+    },
+    {
+      "id": "core_domain_logic",
+      "label": "Core Domain Logic & Invariants",
+      "nodes": [
+        "docs_pws_physical_database_schema_v0_1_db_schema",
+        "docs_pws_use_cases_state_machines_v0_1_use_cases",
+        "docs_pws_testing_acceptance_criteria_v0_1_acceptance_criteria"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "docs/PWS_Testing_Acceptance_Criteria_v0.1.md"
+    },
+    {
+      "id": "operational_readiness",
+      "label": "Operational & Reliability Framework",
+      "nodes": [
+        "docs_pws_incident_response_playbook_v0_1_incident_response",
+        "docs_pws_observability_architecture_v0_1_observability_arch",
+        "docs_pws_operations_backup_retention_v0_1_backup_strategy"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/PWS_Incident_Response_Playbook_v0.1.md"
+    }
+  ],
+  "built_at_commit": "07e27a600a47a5c75512cc575868683754c5811e"
+}

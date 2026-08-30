@@ -1,0 +1,51 @@
+-- Seed system permission catalog
+insert into public.permission (resource, action, description) values
+  ('organization', 'read', 'Read organization details'),
+  ('organization', 'update', 'Update organization details'),
+  ('organization', 'members.manage', 'Manage organization members'),
+  ('organization', 'roles.manage', 'Manage organization roles'),
+  ('organization', 'billing.manage', 'Manage organization billing'),
+  ('workspace', 'read', 'Read workspace'),
+  ('workspace', 'create', 'Create workspace'),
+  ('workspace', 'update', 'Update workspace'),
+  ('workspace', 'archive', 'Archive workspace'),
+  ('event', 'read', 'Read event'),
+  ('event', 'create', 'Create event'),
+  ('event', 'update', 'Update event'),
+  ('guest', 'read', 'Read guest'),
+  ('guest', 'create', 'Create guest'),
+  ('guest', 'update', 'Update guest'),
+  ('guest', 'delete', 'Delete guest'),
+  ('guest', 'merge', 'Merge guest'),
+  ('guest', 'import', 'Import guest'),
+  ('guest', 'export', 'Export guest'),
+  ('invitation', 'read', 'Read invitation'),
+  ('invitation', 'create', 'Create invitation'),
+  ('invitation', 'update', 'Update invitation'),
+  ('invitation', 'publish', 'Publish invitation'),
+  ('invitation', 'send', 'Send invitation'),
+  ('invitation', 'cancel', 'Cancel invitation'),
+  ('rsvp', 'read', 'Read RSVP'),
+  ('rsvp', 'update', 'Update RSVP'),
+  ('checkin', 'read', 'Read check-in'),
+  ('checkin', 'create', 'Create check-in'),
+  ('checkin', 'correct', 'Correct check-in'),
+  ('souvenir', 'read', 'Read souvenir'),
+  ('souvenir', 'claim', 'Claim souvenir'),
+  ('souvenir', 'override', 'Override souvenir entitlement'),
+  ('website', 'read', 'Read website'),
+  ('website', 'update', 'Update website draft'),
+  ('website', 'publish', 'Publish website version'),
+  ('billing', 'read', 'Read billing'),
+  ('audit', 'read', 'Read audit log'),
+  ('security_event', 'read', 'Read security event')
+on conflict (resource, action) do nothing;
+
+-- Seed system roles (matrix deferred to Authorization/RLS specification)
+insert into public.role (organization_id, code, name, description, is_system) values
+  (null, 'organization_owner', 'Organization Owner', 'Full organization management', true),
+  (null, 'organization_admin', 'Organization Admin', 'Staff and workspace administration', true),
+  (null, 'event_manager', 'Event Manager', 'Wedding/event operational management', true),
+  (null, 'guest_manager', 'Guest Manager', 'Guest/invitation/RSVP operations', true),
+  (null, 'checkin_staff', 'Check-in Staff', 'Event check-in operations', true)
+on conflict (code, organization_id) do nothing;
