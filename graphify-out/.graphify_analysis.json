@@ -1,0 +1,195 @@
+{
+  "communities": {
+    "0": [
+      "docs_pws_integration_test_plan_v0_1_integration_test",
+      "docs_pws_messaging_architecture_v0_1_messaging_arch",
+      "docs_pws_payment_architecture_v0_1_payment_arch",
+      "docs_pws_physical_database_schema_v0_1_db_schema",
+      "docs_pws_public_rsvp_expiry_spec_v0_1_rsvp_expiry",
+      "docs_pws_security_nfr_specification_v0_1_security_nfr",
+      "docs_pws_testing_acceptance_criteria_v0_1_acceptance_criteria",
+      "docs_pws_ui_ux_specification_v0_1_ui_ux_spec",
+      "docs_pws_use_cases_state_machines_v0_1_use_cases"
+    ],
+    "1": [
+      "agents_ai_code_executor",
+      "agents_devmode_branch",
+      "docs_pws_api_contract_v0_1",
+      "docs_pws_architecture_decision_record_v0_1",
+      "docs_pws_authorization_rls_specification_v0_1_updated",
+      "docs_pws_domain_core_data_multi_tenant_rbac_v0_1",
+      "docs_pws_domain_services_business_rules_v0_1",
+      "docs_pws_engineering_implementation_blueprint_v0_1"
+    ],
+    "2": [
+      "opencode_plugins_graphify",
+      "opencode_plugins_graphify_graphifyplugin",
+      "opencode_plugins_graphify_rationale_4"
+    ],
+    "3": [
+      "docs_pws_agent_action_log_v0_1",
+      "docs_pws_ai_agent_operating_rules_v0_1"
+    ],
+    "4": [
+      "docs_pws_feature_flag_strategy_v0_1_feature_flag",
+      "docs_pws_release_process_and_change_log_v0_1_release_process"
+    ],
+    "5": [
+      "docs_pws_incident_response_playbook_v0_1_incident_response",
+      "docs_pws_observability_architecture_v0_1_observability_arch"
+    ],
+    "6": [
+      "docs_pws_checkin_offline_strategy_v0_1"
+    ],
+    "7": [
+      "docs_pws_client_writable_fields_v0_1"
+    ],
+    "8": [
+      "docs_pws_data_governance_and_privacy_v0_1"
+    ],
+    "9": [
+      "docs_pws_deployment_guide_and_runbook_v0_1"
+    ],
+    "10": [
+      "docs_pws_glossary_v0_1_glossary"
+    ],
+    "11": [
+      "docs_pws_operations_backup_retention_v0_1_backup_strategy"
+    ],
+    "12": [
+      "docs_pws_prd_v0_1_prd"
+    ],
+    "13": [
+      "docs_pws_release_roadmap_and_zero_cost_strategy_v0_1_roadmap"
+    ]
+  },
+  "cohesion": {
+    "0": 0.2222222222222222,
+    "1": 0.5357142857142857,
+    "2": 0.6666666666666666,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0
+  },
+  "gods": [
+    {
+      "id": "agents_ai_code_executor",
+      "label": "AI Code Executor",
+      "degree": 8
+    },
+    {
+      "id": "docs_pws_api_contract_v0_1",
+      "label": "PWS API Contract v0.1",
+      "degree": 5
+    },
+    {
+      "id": "docs_pws_use_cases_state_machines_v0_1_use_cases",
+      "label": "Use Cases & State Machines",
+      "degree": 5
+    },
+    {
+      "id": "docs_pws_architecture_decision_record_v0_1",
+      "label": "PWS Architecture Decision Record v0.1",
+      "degree": 4
+    },
+    {
+      "id": "docs_pws_authorization_rls_specification_v0_1_updated",
+      "label": "PWS Authorization + RLS Specification v0.1",
+      "degree": 4
+    },
+    {
+      "id": "docs_pws_domain_core_data_multi_tenant_rbac_v0_1",
+      "label": "PWS Domain Model + Core Entity/Data Model + Multi-Tenant/RBAC Model v0.1",
+      "degree": 4
+    },
+    {
+      "id": "docs_pws_engineering_implementation_blueprint_v0_1",
+      "label": "PWS Engineering Implementation Blueprint v0.1",
+      "degree": 3
+    },
+    {
+      "id": "docs_pws_physical_database_schema_v0_1_db_schema",
+      "label": "Physical Database Schema",
+      "degree": 3
+    },
+    {
+      "id": "docs_pws_ai_agent_operating_rules_v0_1",
+      "label": "PWS AI Agent Operating Rules v0.1",
+      "degree": 2
+    },
+    {
+      "id": "docs_pws_domain_services_business_rules_v0_1",
+      "label": "PWS Domain Services + Business Rules v0.1",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "AI Code Executor",
+      "target": "PWS AI Agent Operating Rules v0.1",
+      "source_files": [
+        "AGENTS.md",
+        "docs/PWS_AI_Agent_Operating_Rules_v0.1.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities; peripheral node `PWS AI Agent Operating Rules v0.1` unexpectedly reaches hub `AI Code Executor`"
+    },
+    {
+      "source": "AI Code Executor",
+      "target": "PWS Domain Services + Business Rules v0.1",
+      "source_files": [
+        "AGENTS.md",
+        "docs/PWS_Domain_Services_Business_Rules_v0.1.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `PWS Domain Services + Business Rules v0.1` unexpectedly reaches hub `AI Code Executor`"
+    },
+    {
+      "source": "AI Code Executor",
+      "target": "PWS API Contract v0.1",
+      "source_files": [
+        "AGENTS.md",
+        "docs/PWS_API_Contract_v0.1.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "AI Code Executor",
+      "target": "PWS Architecture Decision Record v0.1",
+      "source_files": [
+        "AGENTS.md",
+        "docs/PWS_Architecture_Decision_Record_v0.1.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "AI Code Executor",
+      "target": "PWS Authorization + RLS Specification v0.1",
+      "source_files": [
+        "AGENTS.md",
+        "docs/PWS_Authorization_RLS_Specification_v0.1_updated.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 119681,
+    "output": 5451
+  }
+}

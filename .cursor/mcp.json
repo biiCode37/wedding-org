@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "context7": {
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ctx7sk-12c8ca71-e08a-4fb3-95be-43521acc2be9"
+      }
+    },
+    "github": {
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "vercel": {
+      "url": "https://mcp.vercel.com"
+    }
+  }
+}
