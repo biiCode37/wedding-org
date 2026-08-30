@@ -171,12 +171,13 @@ Untuk MVP:
 Keduanya menjadi kontak utama untuk insiden operasional dan billing.
 
 ## 14. Prosedur Incident Ringkas
+Default insiden MVP: **repair-first bila aman** (selaras dengan Incident Response Playbook).
 ```text
 1. Deteksi masalah
 2. Identifikasi scope
 3. Cek apakah issue UI, API, DB, atau webhook
 4. Tahan release baru bila perlu
-5. Rollback aplikasi bila aman
+5. Repair first bila aman; rollback aplikasi hanya bila repair tidak aman/terlalu lambat
 6. Restore data bila diperlukan
 7. Catat incident
 8. Perbaiki root cause

@@ -19,7 +19,7 @@ Komponen yang **tidak** termasuk dalam MVP: distributed tracing dengan OpenTelem
 | **Database Logging** | Log query yang gagal, RLS denial, dan audit events (`member.removed`, `invitation.token.revoked`, `souvenir.claim.created`). | Supabase audit log (`audit_log` table) sudah ada; di‑enable `log_statement = 'all'` pada free tier default. 
 | **Auth Logging** | Log login success/failure, token revocation, MFA (jika nanti). | Supabase Auth menyediakan audit event `auth_event` yang dapat di‑query.
 | **Metric Collection** | Counter untuk: total request, successful request, error (5xx), RLS denial, check‑in success, souvenir claim success, webhook success/failure. Histogram latency per endpoint. | Vercel analytics menyediakan hit count & latency; custom endpoint `/api/metrics` mengekspor JSON untuk prom‑push ke external service (deferred). 
-| **Alerting** | Alert ketika: error rate > 5 % per 5 menit, RLS denial spike > 100 per menit, backup job gagal, webhook verification gagal. | Vercel Alerts (email/Slack) untuk error rate; GitHub Action yang memeriksa backup log dan mengirim ke Slack bila gagal.
+| **Alerting** | Alert ketika: error rate > 5 % per 5 menit, RLS denial spike > 100 per menit, backup job gagal, webhook verification gagal. | Vercel Alerts (email/Slack) untuk error rate; GitHub Action yang memeriksa backup log dan mengirim ke Slack bila gagal. Rate limit middleware: 100 req/min/user, 1000 req/min/org.
 | **Dashboard** | Visualisasi request volume, latency, error rate, check‑in / souvenir claim KPI, audit events terakhir. | Vercel dashboard + static page `docs/observability.html` yang menampilkan data dari `/api/metrics` (JSON). 
 
 ## 4. Alur Data Observability

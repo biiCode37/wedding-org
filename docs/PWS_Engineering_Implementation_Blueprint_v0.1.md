@@ -13,7 +13,7 @@ Status proyek saat ini: **documentation readiness**. Implementasi baru boleh dim
 | **Hosting** | **Vercel** – free tier cukup untuk beta, CI/CD otomatis, preview deploy, edge caching untuk invitation static page. |
 | **Media storage** | **Supabase Storage** – terintegrasi dengan RLS, kuota gratis cukup untuk gambar kecil selama beta. |
 | **Data test/dev** | **Data sintetis** – generator dummy data untuk development & CI, tidak memakai data tamu nyata. |
-| **Payment provider** | **Midtrans** – provider Indonesia dengan webhook signed, cocok untuk SaaS subscription. |
+| **Payment provider** | **Midtrans** (locked per ADR-010) – provider Indonesia dengan webhook signed, cocok untuk SaaS subscription. |
 | **Public RSVP expiry** | **Valid sampai akhir event** – token tetap aktif hingga `event.end_at`; setelah itu otomatis dianggap kedaluwarsa. |
 | **Client edit permission** | **Read‑only untuk client/couple** – hanya staff yang dapat mengubah data wedding, website, dan guest; client hanya dapat melihat. |
 | **Check‑in mode** | **Online‑only** – check‑in harus terhubung ke API realtime; tidak ada fallback offline untuk MVP. |
@@ -49,7 +49,11 @@ Status proyek saat ini: **documentation readiness**. Implementasi baru boleh dim
 | **Offline / degraded check-in** | Resolved for MVP | `PWS_Checkin_Offline_Strategy_v0.1.md`; online-only. |
 | **Backup retention (RPO/RTO)** | Baseline defined | `PWS_Operations_Backup_Retention_v0.1.md`; perlu review operasional sebelum production. |
 | **Observability baseline** | Baseline defined | `PWS_Observability_Architecture_v0.1.md`; threshold final tetap perlu review. |
-| **Payment implementation detail** | Open | Wajib dibuat: `PWS_Payment_Architecture_v0.1.md`. |
+| **Payment implementation detail** | Resolved for MVP | `PWS_Payment_Architecture_v0.1.md` (Midtrans). |
+| **Event lifecycle states** | Resolved for MVP | `PWS_Use_Cases_State_Machines_v0.1.md`. |
+| **Rate limit defaults** | Resolved | 100 req/min/user, 1000 req/min/org. |
+| **403 vs 404 mapping** | Resolved | 403: authd-but-forbidden; 404: not-found-or-enumeration. |
+| **Compliance baseline** | Resolved | Indonesia PDP (UU 27/2022). |
 | **Messaging implementation detail** | Open | Wajib dibuat: `PWS_Messaging_Architecture_v0.1.md`. |
 | **UI/UX implementation detail** | Open | Wajib dibuat: `PWS_UI_UX_Specification_v0.1.md`. |
 | **Data governance/privacy** | Open | Wajib dibuat: `PWS_Data_Governance_and_Privacy_v0.1.md`. |
@@ -78,7 +82,7 @@ Status proyek saat ini: **documentation readiness**. Implementasi baru boleh dim
 ### 6. Checklist gate sebelum **Build** dimulai
 - [ ] Blueprint ini disetujui eksplisit oleh pengguna.
 - [ ] Seluruh dokumen wajib upstream direview dan tidak contradictory.
-- [ ] Payment architecture Midtrans disetujui.
+- [ ] Payment architecture Midtrans disetujui (per ADR-010, locked).
 - [ ] Messaging architecture disetujui, atau messaging MVP dinyatakan out of scope.
 - [ ] UI/UX specification disetujui.
 - [ ] Data governance/privacy disetujui.

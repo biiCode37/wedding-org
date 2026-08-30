@@ -226,6 +226,8 @@ Requirements:
 
 Source tidak menetapkan formal regulatory certification tertentu; jangan mengklaim compliance formal tanpa keputusan dan evidence tambahan.
 
+**Baseline compliance MVP:** Indonesia PDP (UU 27/2022). GDPR dan regulasi lain opsional V1/V2.
+
 ---
 
 ## 10. Identifier Security

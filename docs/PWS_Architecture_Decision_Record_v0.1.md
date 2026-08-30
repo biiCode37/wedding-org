@@ -376,15 +376,15 @@ Application tidak boleh menyimpan raw password sendiri.
 
 ---
 
-## ADR-010 — Payment Provider belum Dikunci; Gunakan Abstraction Layer
+## ADR-010 — Payment Provider; Gunakan Abstraction Layer
 
-**Status:** Accepted / Deferred Provider Selection
+**Status:** Accepted
 
 ### Decision
 
-Payment gateway belum dipilih pada ADR v0.1.
+Midtrans dipilih sebagai **payment provider** untuk MVP (production ready).
 
-Arsitektur harus menggunakan **payment provider abstraction** sehingga domain billing tidak tergantung pada satu gateway.
+Arsitektur harus menggunakan **payment provider abstraction** sehingga domain billing dapat diganti atau diperluas di masa depan.
 
 ```text
 Billing Domain
@@ -392,24 +392,27 @@ Billing Domain
 Payment Provider Interface
       ↓
 Provider Adapter
-      ├── Provider A
-      ├── Provider B
-      └── Provider C
+      ├── Midtrans Adapter
+      └── [Provider Lainnya]
 ```
 
 ### Rationale
 
-- Provider belum menjadi keputusan bisnis final.
-- Menghindari vendor lock-in terlalu dini.
-- Memungkinkan provider dipilih berdasarkan target market, fee, reliability, dan availability saat implementation billing.
+- Provider MVP sudah ditentukan (Midtrans) berdasarkan:
+  - Target market (Indonesia, QRIS)
+  - Marketplace leadership
+  - Stable webhook API
+  - Cost-effective pricing
+- Vendor lock-in hanya diterapkan pada MVP, tidak pada domain logic.
+- Future provider migration tetap mungkin tanpa restrukturisasi domain.
 
 ### Mandatory Constraint
 
-Payment state harus berasal dari **verified provider events/webhooks**, bukan hanya browser redirect.
+Payment state harus berasal dari **verified Midtrans webhook events**, bukan hanya browser redirect.
 
-### Deferred Decision
+### Future Migration
 
-Provider pertama yang benar-benar digunakan untuk production akan ditetapkan melalui ADR terpisah sebelum billing production implementation.
+Provider berikutnya akan ditetapkan melalui ADR terpisah ketika kebutuhan bisnis berkembang.
 
 ---
 
