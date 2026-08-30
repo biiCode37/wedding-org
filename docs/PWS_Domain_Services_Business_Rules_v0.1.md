@@ -1143,7 +1143,7 @@ The following remain intentionally deferred because upstream source does not pro
 | Exact offline/degraded check-in behavior | Deferred |
 | Exact audit retention | Deferred |
 | Exact provider retry/timeout policy | Deferred |
-| Final 403 vs 404 mapping | Deferred |
+| Final 403 vs 404 mapping | Resolved | Blueprint defines 403/404 rule (see API Contract). |
 | Exact pagination/rate limits | Deferred |
 
 Use Cases + State Machines and Security/NFR must resolve these before implementation of affected flows.

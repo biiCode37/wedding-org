@@ -189,6 +189,17 @@ Minimal harus menjelaskan:
 - cookie atau storage yang dipakai untuk autentikasi tidak boleh dibagikan ke domain tak sah;
 - data sensitif tidak boleh disimpan di local storage tanpa alasan eksplisit.
 
+### 9.3 Compliance baseline
+Platform menetapkan **Indonesia PDP (UU 27/2022)** sebagai umum compliance baseline MVP.
+
+Konsekuensi:
+- privacy notice wajib mencakup klasifikasi data pribadi sesuai klasifikasi dokumen ini;
+- data personal (guest, couple, RSVP, media) diperlakukan sebagai data pribadi;
+- hak pemilik data (akses, koreksi, penghapusan, potnah biometric dihargai) sudah linear pada Data Subject Rights;
+- GDPR dan regulasi lain bersifat opsional pada fase V1/V2 dan memerlukan keputusan tersendiri.
+
+Tidak ada klaim compliance formal di luar: UU 27/2022 baseline + dokumen ini.
+
 ## 10. AI Data Policy
 Data tenant **tidak dipakai untuk training AI**.
 

@@ -355,7 +355,7 @@ event_type
 starts_at
 ends_at NULL
 timezone
-status
+status -- DRAFT | SCHEDULED | LIVE | ENDED | CANCELLED
 notes NULL
 created_at
 updated_at
@@ -366,6 +366,7 @@ Constraints:
 - `workspace.organization_id = event.organization_id`.
 - `venue` harus berasal dari workspace yang sama.
 - `ends_at >= starts_at` bila ada.
+- `status` harus memenuhi lifecycle state machine: `DRAFT → SCHEDULED → LIVE → ENDED` dgn `CANCELLED` dapat dari SCHEDULED/LIVE.
 
 ---
 

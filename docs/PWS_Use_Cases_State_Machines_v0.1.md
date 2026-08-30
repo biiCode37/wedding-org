@@ -841,13 +841,20 @@ Same principle:
 
 The source establishes event ownership and event participation, but does not provide a complete final event state machine.
 
-Therefore:
+**Bonus:** On 2026-08-30 the **baseline MVP event lifecycle** was approved:
+
+- **DRAFT** — event in preparation, not yet finalized.
+- **SCHEDULED** — confirmed, future date; RSVP/check-in may not open.
+- **LIVE** — event ongoing; check-in and RSVP windows active per policy.
+- **ENDED** — event completed; used by Public RSVP Expiry Spec (`event.end_at` boundary) and check-in closure.
+- **CANCELLED** — event voided; token/RSVP expiries trigger per security decision.
 
 ```text
-No invented lifecycle enum
+DRAFT → SCHEDULED → LIVE → ENDED
+              ↘ CANCELLED
 ```
 
-until the lifecycle states are defined by the product/use-case specification.
+These supersede the earlier "No invented lifecycle enum" note for MVP scope. **Workspace** lifecycle states remain deferred (DRAFT → ACTIVE → ARCHIVED path still to be documented).
 
 ---
 

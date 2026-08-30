@@ -314,7 +314,10 @@ Canonical classes:
 | 500 | `INTERNAL_ERROR` | Unexpected server error |
 | 503 | `SERVICE_UNAVAILABLE` | Temporary dependency/service failure |
 
-Exact 403 vs 404 behavior remains security/API implementation policy. Cross-tenant resource existence must never be disclosed merely because the caller lacks access.
+Exact 403 vs 404 mapping resolved per Blueprint (Section 5.1):
+- **403** – Authenticated but unauthorized (no resource existence disclosed).
+- **404** – Resource not found or enumeration prevented.
+
 
 ---
 
@@ -1520,13 +1523,13 @@ These are intentionally not invented by this document:
 
 | Item | Status | Downstream |
 |---|---|---|
-| Exact client writable fields | Open | Use Cases / Domain Services |
-| Public RSVP expiry/update window | Deferred | Use Cases + Security |
-| Exact 403 vs 404 behavior | Deferred | Security/API testing |
+| Exact client writable fields | Resolved | `PWS_Client_Writable_Fields_v0.1.md` (read-only). |
+| Public RSVP expiry/update window | Resolved | `PWS_Public_RSVP_Expiry_Spec_v0.1.md`. |
+| Exact 403 vs 404 behavior | Resolved | 403 = authenticated-but-forbidden (no existence leak); 404 = not-found/enumeration-prevention. |
 | Exact pagination strategy for every high-volume endpoint | Deferred | Engineering/NFR |
-| Exact rate limits | Deferred | Security/NFR |
-| Payment provider | Deferred | Payment/Billing ADR |
-| Offline/degraded check-in behavior | Deferred | Technical/NFR |
+| Exact rate limits | Resolved | Baseline 100 req/min/user, 1000 req/min/org (hardening/adjustment at load test). |
+| Payment provider | Resolved | Midtrans (ADR-010). |
+| Offline/degraded check-in behavior | Resolved | `PWS_Checkin_Offline_Strategy_v0.1.md` (online-only). |
 | Detailed audit retention | Deferred | Security/Operations |
 | Exact SQL/RLS implementation | Deferred | Engineering/Migrations |
 | Final platform support API surface | Deferred | Platform Administration |
